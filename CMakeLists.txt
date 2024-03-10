@@ -9,5 +9,5 @@ include_directories(${PYTHON_INCLUDE_DIRS})
 add_subdirectory(audiosnoopy/pybind11)
 pybind11_add_module(audiosnoopy audiosnoopy/AudioSnoopyPy.cpp audiosnoopy/AudioSnoopy.cpp)
 
-find_package(JUCE REQUIRED)
+add_subdirectory(JUCE)
 target_link_libraries(audiosnoopy PRIVATE juce::juce_audio_processors)
