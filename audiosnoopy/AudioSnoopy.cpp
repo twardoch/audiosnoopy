@@ -5,7 +5,7 @@
 AudioSnoopy::AudioSnoopy(const std::string& pluginPath) {
     juce::AudioPluginFormatManager formatManager;
     formatManager.addDefaultFormats();
-    
+
     juce::PluginDescription desc;
     desc.fileOrIdentifier = juce::String(pluginPath);
 
@@ -16,8 +16,8 @@ AudioSnoopy::AudioSnoopy(const std::string& pluginPath) {
         pluginInfo = "{";
         pluginInfo += "\"name\": \"" + plugin->getName().toStdString() + "\",";
         pluginInfo += "\"format\": \"" + plugin->getPluginDescription().pluginFormatName.toStdString() + "\",";
-        pluginInfo += "\"manufacturer\": \"" + plugin->getManufacturer().toStdString() + "\",";
-        pluginInfo += "\"version\": \"" + plugin->getVersion().toStdString() + "\",";
+        pluginInfo += "\"manufacturer\": \"" + plugin->getPluginDescription().manufacturerName.toStdString() + "\",";
+        pluginInfo += "\"version\": \"" + plugin->getPluginDescription().version.toStdString() + "\",";
         pluginInfo += "\"parameters\": [";
 
         auto params = plugin->getParameters();
