@@ -13,10 +13,10 @@ class CMakeBuild(build_ext):
 
 setup(
     name="audiosnoopy",
-    version="0.1.0",
+    version="0.1.1",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    ext_modules=[Extension("audiosnoopy._audiosnoopy", [])],
+    ext_modules=[Extension("audiosnoopy._audiosnoopy", ["src/_audiosnoopy.cpp"])],
     cmdclass={"build_ext": CMakeBuild},
     install_requires=["fire"],
 )
