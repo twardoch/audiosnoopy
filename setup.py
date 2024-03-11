@@ -16,7 +16,7 @@ setup(
     version="0.1.1",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    ext_modules=[Extension("audiosnoopy._audiosnoopy", ["src/_audiosnoopy.cpp"])],
+    ext_modules=[Extension("_audiosnoopy", ["src/_audiosnoopy.cpp"])],
     cmdclass={"build_ext": CMakeBuild},
     install_requires=["fire"],
 )
