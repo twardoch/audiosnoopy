@@ -1,6 +1,6 @@
 import os
 
-from setuptools import Extension, setup
+from setuptools import Extension, find_packages, setup
 from setuptools.command.build_ext import build_ext
 
 
@@ -14,8 +14,9 @@ class CMakeBuild(build_ext):
 setup(
     name="audiosnoopy",
     version="0.1.0",
-    packages=["audiosnoopy"],
-    ext_modules=[Extension("_audiosnoopy", [])],
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
+    ext_modules=[Extension("audiosnoopy._audiosnoopy", [])],
     cmdclass={"build_ext": CMakeBuild},
     install_requires=["fire"],
 )
