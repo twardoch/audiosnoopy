@@ -6,21 +6,21 @@ import json
 from pathlib import Path
 from typing import Union
 
-import fire
-
-import audiosnoopy
+from . import _audiosnoopy
 
 
-def audiosnoopy(plugin_path: Union[str, Path]) -> dict:
+def snoop(plugin_path: Union[str, Path]) -> dict:
     """Introspects an audio plugin and returns its API info as a dict."""
     if isinstance(plugin_path, Path):
         plugin_path = str(plugin_path.resolve())
 
-    snoopy = audiosnoopy.AudioSnoopy(plugin_path)
+    snoopy = _audiosnoopy.AudioSnoopy(plugin_path)
     info_json = snoopy.get_plugin_info()
     return json.loads(info_json)
 
 
 def cli():
     """CLI entry point."""
+    import fire
+
     fire.Fire(audiosnoopy)

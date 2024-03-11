@@ -5,7 +5,8 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(audiosnoopy, m) {
+PYBIND11_MODULE(libaudiosnoopy, m)
+{
     py::class_<AudioSnoopy>(m, "AudioSnoopy")
         .def(py::init<const std::string &>())
         .def("get_plugin_info", &AudioSnoopy::getPluginInfo);
