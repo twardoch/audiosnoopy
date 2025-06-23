@@ -1,0 +1,25 @@
+# ninja log v5
+60	112707	1750647368857080447	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o	802f2509521fe664
+58	87	1750647256256573041	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	b51a2ff3ba0313b3
+87	15502	1750647271665738360	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_events/juce_events.cpp.o	6d6e5dfc94deba43
+55	8454	1750647178646697748	CMakeFiles/_audiosnoopy.dir/src/_audiosnoopy.cpp.o	55b0915331e3c622
+57	87	1750647170278063586	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	79f9d617f13d0913
+54	5337	1750647104117045179	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o	604826a60b21b21b
+57	109	1750647170302065405	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	5d0c179ee362daff
+54	40688	1750647210869138320	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_core/juce_core.cpp.o	80c338fe6f928d52
+54	18309	1750647117090029899	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o	6553717f148ddc60
+55	12174	1750647182362979320	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o	92baafde300e680e
+109	32669	1750647202840530396	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o	3c8ab23ef83e85e9
+58	37948	1750647294103434566	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o	767756c670f746a9
+4	49	0	/app/_skbuild/linux-x86_64-3.12/cmake-build/CMakeFiles/cmake.verify_globs	2c8e155f290055e7
+85	67814	1750647323977691791	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_graphics/juce_graphics.cpp.o	20e279c63e64d7c4
+58	85	1750647256252572738	CMakeFiles/AudioSnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	3391bea4e3cd79f8
+57	17946	1750647274113923471	CMakeFiles/AudioSnoopy.dir/src/AudioSnoopy.cpp.o	4ed161e61775a43e
+4	49	0	/app/_skbuild/linux-x86_64-3.12/cmake-build/CMakeFiles/cmake.verify_globs	69250c164018f4c0
+56	79	1750647468472593123	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp.o	c5c6fa7f9484aa58
+57	99	1750647468492594630	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp.o	cf9d65b419212067
+55	9749	1750647478141321717	CMakeFiles/_audiosnoopy.dir/src/AudioSnoopy.cpp.o	4695fb319ccc6014
+55	11000	1750647479393416062	CMakeFiles/_audiosnoopy.dir/src/_audiosnoopy.cpp.o	7c401f0e6ca6edf5
+55	14764	1750647483153699390	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o	fb139f42b87c45ee
+99	15303	1750647483693740080	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_graphics/juce_graphics.cpp.o	f049c36f16c3e18e
+79	36451	1750647504827332164	CMakeFiles/_audiosnoopy.dir/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o	6148391be9e2b1b1

@@ -1,0 +1,1 @@
+{"args": ["/tmp/pip-build-env-sb5as9zp/overlay/lib/python3.12/site-packages/cmake/data/bin/cmake", "-Dpybind11_DIR=/tmp/pip-build-env-sb5as9zp/overlay/lib/python3.12/site-packages/pybind11/share/cmake/pybind11", "-DCMAKE_BUILD_TYPE:STRING=Release"], "version": "4.0.3", "environment": {"PYTHONNOUSERSITE": "1", "PYTHONPATH": "/tmp/pip-build-env-sb5as9zp/site"}}

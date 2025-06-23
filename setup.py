@@ -1,22 +1,12 @@
-import os
+from skbuild import setup
+import pybind11
 
-from setuptools import Extension, find_packages, setup
-from setuptools.command.build_ext import build_ext
-
-
-class CMakeBuild(build_ext):
-
-    def run(self):
-        os.system("cmake . && make")
-        super().run()
-
+cmake_args = [f'-Dpybind11_DIR={pybind11.get_cmake_dir()}']
 
 setup(
-    name="audiosnoopy",
-    version="0.1.1",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
-    ext_modules=[Extension("_audiosnoopy", ["src/_audiosnoopy.cpp"])],
-    cmdclass={"build_ext": CMakeBuild},
-    install_requires=["fire"],
+    # packages is typically read from pyproject.toml [tool.setuptools]
+    package_dir={"audiosnoopy": "src"}, # The 'audiosnoopy' package is in the 'src' directory
+    cmake_install_dir="audiosnoopy",    # Files from CMAKE_INSTALL_PREFIX/audiosnoopy (like _audiosnoopy.so)
+                                      # will be placed into the 'audiosnoopy' package directory (which is 'src')
+    cmake_args=cmake_args,
 )
