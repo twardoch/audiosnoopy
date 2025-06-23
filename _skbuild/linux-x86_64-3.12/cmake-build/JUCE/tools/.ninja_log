@@ -1,0 +1,11 @@
+# ninja log v5
+46	32693	1750646057708914721	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.cpp.o	6ea724b1cd978445
+48	31379	1750646056392816927	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.cpp.o	412939de2be35c1d
+45	22560	1750646047600163561	extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.o	ae0d88f9fa873c97
+57	8122	1750646893332987710	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_data_structures/juce_data_structures.cpp.o	207a7b1c05729cab
+76289	78349	1750646963550350196	extras/Build/juceaide/juceaide_artefacts/Debug/juceaide	3b5d8aafa2c17ecb
+48	22231	1750646047264138591	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.cpp.o	e4f5b783072a63f9
+46	22270	1750646047308141861	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.o	ac43792774879a6b
+4	62	0	/app/_skbuild/linux-x86_64-3.12/cmake-build/JUCE/tools/CMakeFiles/cmake.verify_globs	8c5c441b387f234c
+57	76288	1750646961386185137	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_gui_basics/juce_gui_basics.cpp.o	c751dddd378ad216
+4	47	0	/app/_skbuild/linux-x86_64-3.12/cmake-build/JUCE/tools/CMakeFiles/cmake.verify_globs	c728ffbfb885f6c6

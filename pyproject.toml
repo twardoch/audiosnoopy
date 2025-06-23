@@ -1,5 +1,50 @@
 [build-system]
-requires = ["setuptools>=42", "wheel", "cmake", "pybind11"]
+requires = ["setuptools>=42", "wheel", "scikit-build>=0.17.6", "cmake>=3.15", "pybind11>=2.10"]
 build-backend = "setuptools.build_meta"
-[tool.poetry.scripts]
+# backend-path removed; setuptools finds setup.py in root by default.
+
+[project]
+name = "audiosnoopy"
+version = "0.1.1"
+description = "A lightweight Python library for introspecting audio plugin APIs."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Your Name", email = "you@example.com"} # Replace with actual author info
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: C++",
+    "Topic :: Multimedia :: Sound/Audio :: Plugins",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "fire"
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/audiosnoopy" # Replace with actual URL
+Repository = "https://github.com/your-username/audiosnoopy" # Replace with actual URL
+
+[project.scripts]
 audiosnoopy = "audiosnoopy.__main__:cli"
+
+[tool.setuptools] # Basic setuptools config, scikit-build will use this
+packages = ["audiosnoopy"]
+# package_dir removed again, will be *only* in setup.py for scikit-build
+# include_package_data = True # If you have data files not managed by CMake (e.g. MANIFEST.in)
+
+[tool.skbuild]
+cmake.source-dir = "." # Path to CMakeLists.txt
+cmake.build-dir = "build" # Build directory for CMake
+# cmake.args = [] # Additional CMake args if needed
+# cmake.install-target = "install" # Default is "install"
+# minimum.version = "0.17" # Minimum scikit-build version, if needed
