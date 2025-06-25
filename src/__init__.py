@@ -9,7 +9,7 @@ from typing import Union
 from . import _audiosnoopy
 
 
-def snoop(plugin_path: Union[str, Path]) -> dict:
+def snoop(plugin_path: str | Path) -> dict:
     """Introspects an audio plugin and returns its API info as a dict."""
     if isinstance(plugin_path, Path):
         plugin_path = str(plugin_path.resolve())

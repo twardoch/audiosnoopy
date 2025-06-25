@@ -1,5 +1,13 @@
-from skbuild import setup
-import pybind11
+import os
+
+from setuptools import Extension, find_packages, setup
+from setuptools.command.build_ext import build_ext
+
+
+class CMakeBuild(build_ext):
+    def run(self):
+        os.system("cmake . && make")
+        super().run()
 
 cmake_args = [f'-Dpybind11_DIR={pybind11.get_cmake_dir()}']
 

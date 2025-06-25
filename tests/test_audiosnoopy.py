@@ -1,5 +1,3 @@
-import pytest
-
 from audiosnoopy import audiosnoopy
 
 
